@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variações TAG input</title>
+    <!--
+      Descrição:
+      Para fortalecer a absorção do conteúdo, crie uma página com todas as variações de input disponível no 
+      site https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#attr-type
+      A página apresenta outros atributos, fique a vontade em usá-los, porém foque no atributo "TYPE".  
+    -->
+</head>
+
+<body>
+    <form action="">
+        <div class="sexo">
+            <label for="lsexo">Sexo:</label>
+            <label for="lmasculino">Masculino</label>
+            <input type="checkbox" name="Masculino">
+            <label for="lfeminino">Feminino</label>
+            <input type="checkbox" name="Feminino">
+        </div>
+        <div class="cor">
+            <label for="lcorOlhos">Cor dos olhos:</label>
+            <input type="color">
+        </div>
+        <div class="dateNascimento">
+            <label for="ldateNasc">Data de Nascimento:</label>
+            <input type="date">
+        </div>
+        <!--Não conpatível com os navegadores - datetime-->
+        <div class="datehoraNascimentoUTC">
+            <label for="ldatehoraNasc">Data e hora do Nascimento UTC:</label>
+            <input type="datetime">
+        </div>
+        <div class="datehoraNascimento">
+            <label for="ldatehoraNasc">Data e hora do Nascimento:</label>
+            <input type="datetime-local">
+        </div>
+        <div class="email">
+            <label for="lemail">E-mail:</label>
+            <input type="email">
+        </div>
+        <div class="docCNH">
+            <input type="image" src="img/cnh.png">
+            <label for="ldocCNH">Documento de CNH:</label>
+            <input type="file">
+        </div>
+        <div class="foto">
+        </div>
+        <div class="month">
+            <label for="lmonth">Mês e ano casamento:</label>
+            <input type="month">
+        </div>
+        <div class="number">
+            <label for="lnumber">Número de filhos:</label>
+            <input type="number" min="0" max="20">
+        </div>
+        <div class="password">
+            <label for="lpassword">Senha:</label>
+            <input type="password" maxlength="15">
+        </div>
+        <div>
+            <p>Selecione a bebida preferida:</p>
+            <input type="radio" value="cerveja" checked>
+            <label for="lcerveja">Cerveja</label>
+        </div>
+        <div>
+            <input type="radio" value="vinho">
+            <label for="lvinho">Vinho</label>
+        </div>
+        <div>
+            <input type="range" id="idademedia" name="idademedia" min="0" max="20">
+            <label for="lidademedia">Idade média dos filhos</label>
+        </div>
+        <div>
+            <label for="lsearch">Pesquisa:</label>
+            <input type="search" id="idsearch" name="idsearch">
+        </div>
+        <div>
+            <label for="ltel">Celular:</label>
+            <input type="tel" id="idtel" name="idtel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div>
+            <label for="lname">Nome da mãe:</label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="50">
+        </div>
+        <div>
+            <label for="lhora">Hora de almoço:</label>
+            <input type="time" id="time" name="time">
+        </div>
+        <div>
+            <label for="lurl">Endereço do site pessoal:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com" pattern="https://.*" size="30"
+                required>
+        </div>
+        <div>
+            <label for="lweek">HSemana:</label>
+            <input type="week" id="week" name="week">
+        </div>
+        <input type="button" value="Enviar">
+        <input type="reset" value="Limpar">
+        <input type="hidden" id="codigo" value="123456">
+
+    </form>
+
+</body>
+
+</html>
