@@ -1,0 +1,91 @@
+#profile {
+    display: flex;
+}
+
+#bodyprofile {
+    width: 15%;
+}
+
+#secprofile {
+    width: 70%;
+}
+
+#categories {
+    width: 15%;
+}
+
+#categories p {
+    text-decoration: underline;
+    margin: auto auto 0px auto;
+}
+
+#divPerfil figure img {
+    width: 200px;
+    height: 200px;
+}
+
+#conteudoprofile {
+    margin: 35px;
+}
+
+#categories p {
+    text-align: center;
+
+}
+
+#divPerfil li{
+    list-style-type: none;
+}
+
+#categories li {
+    text-align: end;
+}
+
+
+#dfooter {
+    margin: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.caixa{
+    width:320px; 
+    height:200px;
+    border: 2px solid;
+}
+
+#imagens{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+#imagens img{
+    width: 100px;
+    height: 80px;
+    gap: 10px;
+}
+
+#attachments ul{
+    padding: 0px;
+}
+
+#attachments li{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: left;
+    padding: 5px;
+}
+
+#attachments li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+

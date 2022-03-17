@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloEx8.css">
+  <link rel="stylesheet" href="css/estiloEx9.css">
+  <link rel="stylesheet" href="css/estiloM1S3-Ex4.css">
+
+
+  <title>3 páginas sem redirecionamento</title>
+
+  <!--
+      Os eventos do navegador que o JAVASCRIPT captura nos permitem criar interações realmente ricas 
+      e até jogos completos.
+
+      Para consolidar essas habilidades você deverá:
+
+      1- Criar um menu com 3 opções : (Galeria, Videos e Perfil)
+      Obs: Para esses exercícios eu espero que vocês utilizem 
+      os exercícios da semana 1:** galeria, incorporando video do YouTube e o exercício 09**
+
+      2- crie 3 divs **invisíveis** cada uma com um ID correspondente ao seu conteúdo. cada uma terá o
+      conteúdo criado nos exercícios citados: ** galeria, incorporando video do YouTube e o exercício 09**.
+      Obs: Para isso será necessário reutilizar o CSS e HTML criado nesses exercícios 
+
+      3- Finalmente, com eventos de clique, faça com que ao clicar no item de menu, 
+      seja exibido seu conteúdo correspondente e escondido os outros.
+    -->
+</head>
+
+<body>
+  <h1>Exercício:[M1S03] Ex 4</h1>
+
+  <nav id="menu">
+    <ul>
+      <li id="navGaleria"> <a href="#">Galeria</a> </li>
+      <li id="navVideos"> <a href="#">Vídeos</a> </li>
+      <li id="navperfil"> <a href="#">Perfil</a> </li>
+    </ul>
+  </nav>
+
+  <div id="divGaleria">
+    <h1>Galeria de Trekking pelo mundo</h1>
+    <p>Caminhar por trilhas naturais, interagindo com a natureza, além de desfrutar das belas paisagens, isto é
+      Trekking.</p>
+
+    <main>
+      <img src="img/img1.jpg" alt="img1">
+      <img src="img/img2.jpeg" alt="img3">
+      <img src="img/img3.jpeg" alt="img4">
+      <img src="img/img4.jpg" alt="img5">
+      <img src="img/img5.jpg" alt="img6">
+      <img src="img/img6.jpg" alt="img7">
+      <img src="img/img7.jpeg" alt="img1">
+      <img src="img/img8.jpeg" alt="img3">
+      <img src="img/img9.jpeg" alt="img4">
+      <img src="img/img10.jpg" alt="img5">
+    </main>
+  </div>
+
+  <div id="divVideos">
+    <h1>Nossa tecnologia para o bem de todos</h1>
+    <p>Dizem que momentos de grande dificuldade despertam a verdadeira natureza humana.
+      Nós, aqui na Audaces, acreditamos nisso.
+      Acreditamos que os grandes desafios despertam a nossa audácia, empatia, compaixão, esperança, união.
+      Mesmo separados fisicamente, mesmo sem podermos nos tocar, mesmo que a gente pense diferente, chegou a hora
+      de derrubarmos as barreiras que nos separam e nos unirmos na luta que vai definir o nosso futuro.
+      E o que cada um de nós pode fazer?
+      A sua parte.
+      Nós, aqui na Audaces, em parceria com nossos clientes, estamos produzindo milhares de máscaras todos os
+      dias, no Brasil e na Itália, para doar a quem precisa, sempre respeitando todas as medidas de proteção
+      necessárias.
+      É assim que fazemos a nossa parte, usando a tecnologia Audaces para que você se sinta protegido e continue
+      amando, sorrindo, lutando, persistindo, criando...
+      Esse é o NOSSO abraço, você pode sentir?
+      Audaces. Improve your Design.
+    </p>
+    <iframe width="424" height="238" src="https://www.youtube.com/embed/F4RpWyqZdIQ" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <div id="divPerfil">
+    <header id="profile">
+      <figure id="imgprofile">
+        <img src="img/profile.jpeg" alt="">
+      </figure>
+      <section id=secprofile>
+        <h1>Profile Name</h1>
+        <p>245 BlackFriers Road</p>
+        <p>Lugate House</p>
+        <p>Londo, SEI 9UY</p>
+        <p>Email: firstname@surname.com</p>
+        <p>Telephone: 0207 955 3705</p>
+      </section>
+      <aside id=categories>
+        <ul>
+          <p>Categories</p>
+          <li>Loren Ipsum</li>
+          <li>dolor sit</li>
+          <li>amet</li>
+          <li>dolor sit</li>
+        </ul>
+      </aside>
+    </header>
+    <main>
+      <article id="conteudoprofile">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur est, sed similique minima
+          nihil laboriosam dicta iusto expedita culpa excepturi! Deserunt inventore ipsum laudantium asperiores
+          minus natus necessitatibus quaerat!</p>
+
+      </article>
+    </main>
+    <footer id="dfooter">
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/F4RpWyqZdIQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <picture id="imagens" class="caixa">
+        <img src="img/paisagem01.jpeg">
+        <img src="img/paisagem02.jpeg">
+        <img src="img/paisagem03.jpeg">
+        <img src="img/paisagem04.jpeg">
+      </picture>
+      <section id="attachments" class="caixa">
+        <ul>
+          <li><img src="img/doispontos.png">
+            <span> Lorem ipsum dolor sit amet</span>
+          </li>
+          <li>
+            <img src="img/pdf.jpg">
+            <span> Lorem ipsum dolor sit amet</span>
+          </li>
+          <li><img src="img/pdf.jpg">
+            <span> Lorem ipsum dolor sit amet</span>
+          </li>
+          <li><img src="img/pdf.jpg">
+            <span> Lorem ipsum dolor sit amet</span>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+  </div>
+  <script src="m1s03-ex4.js"></script>
+</body>
+
+</html>
