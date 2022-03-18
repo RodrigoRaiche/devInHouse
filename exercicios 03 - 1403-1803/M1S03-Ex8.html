@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Explorando dados externos</title>
+
+  <!--
+   Utilizar dados externos é uma prática cada vez mais adotada, pois assim as responsabilidades são divididas.
+
+    Para nos capacitarmos a boa utilização desses dados muitas vezes teremos que ler **documentações**.
+
+    Nesse exercício iremos buscar compreender como esse serviço gratuito e aberto do governo funciona: https://servicodados.ibge.gov.br/api/docs/projecoes
+
+    1- crie uma função que recupere e mostre devidamente estilizada a população atual do Brasil.
+
+
+    -->
+  <style>
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #divSelect{
+      position: absolute;
+      left: 40%;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h2>Exercício:[M1S03] Ex 8</h2>
+  <h1>Projeção da população por localidade </h1>
+  <div id="divSelect">
+    <span>Selecione uma região:</span>
+    <select id="selectReg">
+    </select>
+  </div>
+  <ul id="listaPopulacao">
+  </ul>
+
+  <script src="m1s03-ex8.js"></script>
+
+  <body>
+
+</html>
