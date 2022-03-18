@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Salvando preferencias do usuário</title>
+
+  <!--
+    Crie uma página simples com 2 inputs, um type color e outro type number
+
+    Permita que o usuário adicione (através de um botão) quantas cores ele desejar.
+
+    A cor de fundo da página deve mudar de cor, conforme o número estabelecido no input numérico, e as cores serão as escolhidas pelo usuário.
+
+    Por fim, as preferências de cor e tempo devem ser salvas mesmo que a página seja recarrega ou fechada
+
+    -->
+  <style>
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #divSelect {
+      position: absolute;
+      left: 40%;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .chart-container {
+      position: relative;
+      margin: auto;
+      height: 80vh;
+      width: 60vw;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Exercício:[M1S03] Ex 10</h2>
+  <h1>Salvando preferências do usuário</h1>
+  <main>
+    <div><span>Escolha a cor: </span> <input id="inpColor" type="color"></div>
+    <br>
+    <div><span>Tempo da cor: </span><input id="inpNumber" type="number"></div>
+    <br>
+    <div><button id="btnIncluir">Incluir</button></div>
+  </main>
+
+  <script src="m1s03-ex10.js"></script>
+
+  <body>
+
+</html>
