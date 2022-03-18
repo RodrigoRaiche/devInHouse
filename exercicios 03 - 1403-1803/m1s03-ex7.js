@@ -52,7 +52,7 @@ function manipulaAposRequisicao(json) {
     itemList.style.backgroundColor = "#228B22";
     itemList.style.boxShadow = "5px 5px white, 10px 10px yellow, 15px 15px blue";
 
-    const divList = document.createElement("divList");
+    const divList = document.createElement("div");
     divList.style.fontSize = "20px";
     divList.style.textAlign = "left";
     
