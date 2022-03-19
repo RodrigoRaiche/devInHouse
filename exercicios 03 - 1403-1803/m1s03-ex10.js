@@ -1,21 +1,25 @@
-const infUsuario = localStorage.getItem("infUsuario")
+const infUsuario = localStorage.getItem("infUsuario");
+let preferencias = [];
 
 if (infUsuario != null) {
-    const objConjuntoValores = JSON.parse(infUsuario);
+    const retorno = JSON.parse(infUsuario);
+    preferencias = retorno;
 
-    document.querySelector("#inpColor").value = objConjuntoValores.corDeFundo;
-    defineCorETexto(objConjuntoValores.corDeFundo
-        , objConjuntoValores.tempo);
-    
-
+    document.querySelector("#inpColor").value = retorno[retorno.length - 1].corDeFundo;
+    defineCorETexto(retorno[retorno.length - 1].corDeFundo
+        , retorno[retorno.length - 1].tempo);
+    console.log(preferencias);    
 }
 
 
 function defineCorETexto(cor, tempo) {
 
     document.body.style.background = cor;
-    setTimeout(() => { console.log("aguardando o tempo da cor") }, cor);
+    console.log(tempo);
+    setTimeout(() => { console.log("aguardando o tempo da cor") }, tempo);
     console.log("passou o tempo da cor");
+    //document.body.style.background = preferencias[0].corDeFundo;
+   
 }
 
 var btnIncluir = document.querySelector("#btnIncluir")
@@ -29,7 +33,10 @@ btnIncluir.addEventListener("click",
             "tempoCor": tempo,
         }
 
-        const conjuntoEmString = JSON.stringify(conjuntoUsuario);
+       
+        preferencias.push(conjuntoUsuario);
+
+        const conjuntoEmString = JSON.stringify(preferencias);
 
         localStorage.setItem("infUsuario", conjuntoEmString)
 

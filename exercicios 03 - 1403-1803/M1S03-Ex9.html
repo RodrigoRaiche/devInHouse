@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Criando gráficos dinamicos</title>
+
+  <!--
+   Crie uma página com um script que **contenha um array dos nomes dos seus familiares**
+
+    essa página deve a cada 5 segundos exibir um gráfico da evolução histórica de cada nome
+
+    https://servicodados.ibge.gov.br/api/docs/nomes?versao=2
+
+    https://www.chartjs.org/docs/latest/getting-started/
+
+    -->
+  <style>
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #divSelect {
+      position: absolute;
+      left: 40%;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .chart-container {
+      position: relative;
+      margin: auto;
+      height: 80vh;
+      width: 60vw;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Exercício:[M1S03] Ex 9</h2>
+  <h1>Criando gráficos dinamicos</h1>
+  <ul id="listaNome">
+  </ul>
+  <div class="chart-container">
+    
+  </div>
+
+  <script src="m1s03-ex9.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <body>
+
+</html>
