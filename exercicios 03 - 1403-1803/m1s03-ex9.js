@@ -1,7 +1,7 @@
 var API1 = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/"
 var endereco = "";
 var nro = 0;
-var nomesFamilia = ["Rodrigo", "Rafael", "Liliane", "Onildo", "Nativalina", "Mikaela", "Olinda", "Irâze", "Marina", "Rafaela", "Lucas", "Vanessa"];
+var nomesFamilia = ["Rodrigo", "Rafael", "Liliane", "Onildo", "Mikaela", "Olinda", "Marina", "Rafaela", "Lucas", "Vanessa"];
 
 let listaNome = document.querySelector("#listaNome");
 listaNome.style.display = "flex";
@@ -60,12 +60,9 @@ function manipulaAposRequisicaoNomes(json) {
     }
 
 
-     console.log("teste 1") ;  
      if (myChartElem != null){
         myChartElem.remove();
-        console.log("teste 2") ;
      }
-     console.log("teste 3") ;
      myChartElem = document.createElement("canvas");
      divChart.append(myChartElem);
      var myChart = new Chart(myChartElem, config);
@@ -108,8 +105,7 @@ function obterNomes() {
         return resposta.json();
     }).then(function (json) {
         manipulaAposRequisicaoNomes(json)
-        console.log(j + '/' + nomesFamilia.length);
-        if (j < nomesFamilia.length) {
+        if (j < nomesFamilia.length -1) {
             j++;
         }
         else {
@@ -123,5 +119,5 @@ function obterNomes() {
 }
 
 setInterval(obterNomes, 5000);
-//obterNomes();
+
 
