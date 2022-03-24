@@ -5,18 +5,6 @@ class Animal {
           this.som = null;
      }
 
-     getNome(){
-          return this.nome;
-     }
-
-     getIdade(){
-          return this.idade;
-     }
-
-     getSom(){
-          return this.som;
-     }
-
      emiteSom(som) {
           this.som = som;
      }
