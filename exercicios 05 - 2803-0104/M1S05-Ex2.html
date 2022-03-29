@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Ex 2 - Utilizando map com arrow function e document.querySelectorAll()</title>
+
+  <!--
+    Para reforçar os conhecimentos da semana 4 e aprofundar as possibilidades da semana 3 vamos...
+
+    1 - Crie uma página web com 4 inputs numéricos e um botão de ação
+    (os inputs poderão receber valores entre 0 e 1)
+
+    2 - quando o botão for disparado deve, utilizando a função de array Filter e Map na lista de inputs (document.querySelectorAll()) , 
+    criar 2 grupos de array ( dentro da faixa 0 e 1 e fora da faixa)
+
+    A) Para o grupo **com números entre 0 e 1** o array resultante do primeiro map deve conter elementos **span** cujo conteúdo 
+    e sua cor de fundo serão resultantes do seguinte algoritmo
+
+    ´´´
+    const corDinamica = Math.floor(NumeroEscolhidoPeloUsuario * 16777215).toString(16);
+    ´´´
+    por fim esse elemento deve ser adicionado em baixo do seu input correspondente
+
+    B) Para o grupo de **números superiores a 1 ou inválidos **  o array resultante do segundo filter deve conter os próprios elementos html.
+
+    Esses elementos após separados devem cada um ( foreach) modificar a cor da borda do seu input correspondente de vermelho para indicar falha
+
+
+    -->
+  <style>
+    main{
+      display: flex;
+    }
+    div {
+      flex-wrap: wrap;
+      width: 200px;
+    }
+    button{
+      width: 100px;
+      margin: 0px 45%;
+      position: absolute;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Exercício:[M1S05] Ex 2</h1>
+  <main>
+    <div id="div1">
+      <input type="number" id="number1">
+    </div>
+    <div id="div2">
+      <input type="number" id="number2">
+    </div>
+    <div id="div3">
+      <input type="number" id="number3">
+    </div>
+    <div id="div4">
+      <input type="number" id="number4">
+    </div>
+    <button id="process">Processar</button>
+  </main>
+  
+
+  <script src="m1s05-ex2.js"></script>
+</body>
+
+</html>
