@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Utilizando filter com arrow function</title>
+
+  <!--
+    Descrição: 
+
+    Para reforçar os conhecimentos da semana 4 e aprofundar as possibilidades da semana 3 vamos...
+
+    1- Crie um input de texto simples. centralize o torne maior
+
+    2-Dado a URL que retorna um array de nomes
+    https://servicodados.ibge.gov.br/api/v1/censos/nomes/ranking?qtd=100000
+    (sim vamos manipular cem mil nomes)
+
+    Realize a requisição e armazene o resultado em uma variável disponível globalmente
+    
+    3 - Adicione um evento em que a cada tecla digitada:
+    A) Utilizando o método de array Filter, crie um novo array contendo apenas os nomes que **contém** um **trecho** do texto digitado pelo usuário
+
+    B) Mostre para o usuário em uma div a quantidade de nomes encontrador, e liste-os usando uma lista (ul ou ol) ou tabela (table)
+
+
+    -->
+  <style>
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      
+      list-style-type: none;
+      
+    }
+
+    span {
+      width: 300px;
+    }
+
+    #divPesquisa {
+      position: absolute;
+      left: 43%;
+      font-weight: bold;
+      font-size: 15px;
+      ;
+    }
+
+    #search {
+      width: 300px;
+      font-size: 30px;
+    }
+
+    #qtdElement{
+      margin: 10px;
+      font-size: 30px;
+    }
+
+
+    #resultado{
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Ex 3 - Utilizando filter com arrow function</h2>
+  <h1>Pesquisa nomes</h1>
+  <div id="divPesquisa">
+    <input type="search" id="search">
+    <span id="qtdElement"></span>
+  </div>
+  <br>
+  <div id="resultado">
+    <ul id="listaNomes">
+    </ul>
+  </div>
+
+  <script src="m1s05-ex3.js"></script>
+
+  <body>
+
+</html>
