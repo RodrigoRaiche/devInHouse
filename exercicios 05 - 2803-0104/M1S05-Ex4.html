@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Utilizando find com arrow function</title>
+
+  <!--
+    Descrição: 
+
+      1 - Dado o exercício anterior, crie um novo input do tipo numérico.
+
+      2 - esse input, ao ser alterado seu valor, deve ser **encontrado**(find) no array de rankings o nome cujo rank é correspondente ao número digitado.
+
+      3 - esse nome deve ser exibido em um h1 
+    -->
+  <style>
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      
+      list-style-type: none;
+      
+    }
+
+    span {
+      width: 300px;
+    }
+
+    #divPesquisa {
+      position: absolute;
+      left: 43%;
+      font-weight: bold;
+      font-size: 15px;
+      ;
+    }
+
+    #search {
+      width: 300px;
+      font-size: 30px;
+    }
+
+    #qtdElement{
+      margin: 10px;
+      font-size: 30px;
+    }
+
+
+    #resultado{
+      margin-top: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Ex 4 - Utilizando find com arrow function</h2>
+  <h1>Pesquisa nomes</h1>
+  <div id="divPesquisa">
+    <p>Pesquisar Nome:</p><input type="search" id="search">
+    <span id="qtdElement"></span>
+    <p>Pesquisar Ranking:</p><input type="number" id="searchRanking">
+    <button id='buttonPesquisa'>Pesquisa</button>
+  </div>
+  <br>
+  <div id="resultado">
+    <ul id="listaNomes">
+    </ul>
+    <h1 id="resultadoNro"></h1>
+  </div>
+
+  <script src="m1s05-ex4.js"></script>
+
+  <body>
+
+</html>
