@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ex 5 - Criando meu módulos personalizados</title>
+
+  <!--
+    Descrição: 
+
+      Crie um modulo javascript que  exporte um **Objeto** que contenha
+
+      1) uma função que receba 2 parâmetros 
+
+      A) Um elemento HTML ou uma string contendo um **seletor CSS **(para ser utilizado pelo document.querySelector())
+
+      B) Um array de objetos que quando utilizado terá a seguinte estrutura [{propriedade:"valor"}]
+
+      - Essa função deve aplicar o devido estilo ao elemento indicado.
+
+      A expectativa é de que a função seja chamada da seguinte maneira:
+
+      import { estiliza } from "./utilitarios.js" // ou o nome que achar interessante
+      ...
+      const inputs = Array.from(document.querySelectorAll("input"));
+      inputs.forEach( (input) => {
+          estiliza(input , [ { borderRadius : "10px" } , { borderStyle : "hidden" } ] );
+      } )
+      estiliza("#retangulo" , [ {width: "1200px"} , {heigth : "400px" } ] )
+
+      ### Finalmente
+
+      Escolha um exercício anterios que foi necessário realizar diversas estilizações através do javascript e substitua os códigos pela nova função criada importando-a ao código
+
+    -->
+
+  <style>
+    main {
+      display: flex;
+    }
+
+    div {
+      flex-wrap: wrap;
+      width: 200px;
+    }
+
+    button{
+      width: 100px;
+      margin: 0px 45%;
+      position: absolute;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <body>
+    <h1>Exercício:[M1S05] Ex 5 - Criando meu módulos personalizados</h1>
+    <main>
+      <div id="div1">
+        <input type="number" id="number1">
+      </div>
+      <div id="div2">
+        <input type="number" id="number2">
+      </div>
+      <div id="div3">
+        <input type="number" id="number3">
+      </div>
+      <div id="div4">
+        <input type="number" id="number4">
+      </div>
+      <button id="process">Processar</button>
+    </main>
+
+    <script src="m1s05-ex5.js" type="module"></script>
+  </body>
+
+</html>
