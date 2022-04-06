@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S6] Ex 6 - Usando métodos de Promise (race)</title>
+    <!--
+      Descrição:
+           O sistema de uma empresa, após efetuar a venda, chama funções remotas 
+           de duas empresas de entrega dos pedidos, e aquela que responder mais rápido 
+           nossa requisição fica responsável pela entrega.
+
+            O retorno das chamadas foram adicionados nas constates abaixo: 
+            '_retornoEmpresa1_' e '_retornoEmpresa2_'.
+
+            Usando '**Promise.race()**', recupere o valor da promise da empresa 
+            vencedora e imprima no console do navegador.
+
+            ```javascript
+            const retornoEmpresa1 = new Promise( (resolve, reject) => 
+                setTimeout(resolve, 5000, "Empresa 1") ); // 5 segundos
+            const retornoEmpresa2 = new Promise( (resolve, reject) => 
+                setTimeout(resolve, 3000, "Empresa 2") ); // 3 segundos
+
+            // ... continue daqui ....  :-P 
+            ```
+    -->
+</head>
+
+<body>
+    <h3>Exercício:[M1S06] Ex 6</h3>
+
+    <script src="m1s06-ex6.js"></script>
+
+</body>
+
+</html>
