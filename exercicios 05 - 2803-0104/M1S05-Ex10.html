@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[M1S05] Ex 10 - Algoritmos com módulos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S05] Ex 10 - Algoritmos com módulos</title>
 
-  <!--
-    Descrição: 
-    Dado os 3 exercícios anteriores, vamos criar uma pagina web gamificada.
+    <!--
+      Descrição: 
+      Dado os 3 exercícios anteriores, vamos criar uma pagina web gamificada.
+  
+      Cujo nosso ênfase será trazer uma interação rica com o usuário, o convidando a conhecer as 
+      ferramentas e possibilidades.
+  
+      Abordar todos os conceitos em aplicações práticas nos afastaria do foco atual, mas 
+      espero que essa semana eu possa ter dado ferramentas para que criem **qualquer** tipo 
+      de interação.
+  
+      **Mãos na massa**
+  
+      1 - Transforme o código do exercício anterior em módulo e una sua execução a do exercício 8.
+  
+      2 - Faça com que quando o personagem(seta) estiver em cima da div aleatória criada na tela.
+  
+      A) Ao apertar a tecla espaço, a div diminua de forma proporcional entre a altura e largura. 
+      De forma a dar a percepção de que o personagem absorve a div.
+  
+      B) Enquanto o processo de diminuição da div acontece, o personagem deve crescer de forma 
+      relativa.
+  
+      C) Quando uma div for completamente absorvida, 2 novas devem surgir na tela. 
+  
+      -->
+  
+    <style>
+        body {
+            margin:0;
+        }
 
-    Cujo nosso ênfase será trazer uma interação rica com o usuário, o convidando a conhecer as 
-    ferramentas e possibilidades.
+        div{
+            position: absolute;
+        }
 
-    Abordar todos os conceitos em aplicações práticas nos afastaria do foco atual, mas 
-    espero que essa semana eu possa ter dado ferramentas para que criem **qualquer** tipo 
-    de interação.
-
-    **Mãos na massa**
-
-    1 - Transforme o código do exercício anterior em módulo e una sua execução a do exercício 8.
-
-    2 - Faça com que quando o personagem(seta) estiver em cima da div aleatória criada na tela.
-
-    A) Ao apertar a tecla espaço, a div diminua de forma proporcional entre a altura e largura. 
-    De forma a dar a percepção de que o personagem absorve a div.
-
-    B) Enquanto o processo de diminuição da div acontece, o personagem deve crescer de forma 
-    relativa.
-
-    C) Quando uma div for completamente absorvida, 2 novas devem surgir na tela. 
-
-    -->
-  <style>
-    * {
-      margin: 0;
-    }
-
- 
-
-    #personagem {
-      position: absolute;
-    }
-
-  </style>
+        #personagem{
+            position: absolute;
+        }
+    </style>
 </head>
-
-<body id="principal" style="background-image: url('img/fundo.avif'); width: 100vw; height:100vh; background-size: contain; 
-" >
-
-  <div id="personagem">
-  </div>
-  <script src="m1s05-ex10.js" type="module"></script>
+<body id="principal" style="background-image: url('img/fundo.avif'); width: 100vw; height:100vh; background-size: contain;">
+    <div id="personagem" ></div>
+    <script src="main.js" type="module"></script>
 </body>
-
 </html>
