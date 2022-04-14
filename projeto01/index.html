@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de compras</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titleShoppingList">Controle de compras</h1>
+    </header>
+    <main id="main">
+        <section id="insertProduct">
+            <p id="pInputProduct">Inserir item na lista:</p>
+            <div id="groupInputProduct">
+                <input id="inputProduct" type="text" placeholder="Insira o produto aqui" maxlength="25">
+                <button id="btnInsert">Inserir</button>
+            </div>
+        </section>
+        <section id="secShoppingArea">
+            <section id="secShoppingList">
+                <p>Lista de compras</p>
+                <ul id="ulShoppingList">
+                </ul>
+            </section>
+            <section id="secTotalShopping">
+                <p id="literalTotal">Total das compras</p>
+                <p id="resultado"></p>
+            </section>
+
+        </section>
+
+        <div id="message">
+            <p id="pMessage"></p>
+            <picture id="picMessage">
+            </picture>
+            <button id="btnValueYes">Sim</button>
+            <button id="btnValueNo">Não</button>
+            <span id="elementAlvo"></span>
+            <span id="funcao"></span>
+            <span id="pos"></span>
+        </div>
+        <div id="message2">
+            <p id="pMessage2" name="pMessage2"></p>
+            <picture id="picMessage2">
+            </picture>
+            <button id="btnOk">Ok</button>
+        </div>
+        <div id="fundo"></div>
+    </main>
+    <footer>
+        <picture>
+            <img id="logoDevInHouse" src="img/logoDevInHouse.png" alt="">
+        </picture>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
